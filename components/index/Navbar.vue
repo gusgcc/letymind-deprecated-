@@ -14,10 +14,12 @@
       id="menu"
       class="menu"
     >
-      <li class="active"><a>Home</a></li>
-      <li><a href="">Conoce el programa</a></li>
-      <li><a href="">Historias de exito</a></li>
-      <li><a href="">Preguntas frecuentes</a></li>
+      <div class="menu_inner">
+        <li class="active"><a>Home</a></li>
+        <li><a href="">Conoce el programa</a></li>
+        <li><a href="">Historias de exito</a></li>
+        <li><a href="">Preguntas frecuentes</a></li>
+      </div>
     </div>
   </ul>
 </template>
@@ -48,15 +50,18 @@ export default {
     },
     toggleButton (e) {
       if (document.getElementById('menu').classList.contains('menu_show')) {
-        document.getElementById('menu').classList.remove('menu_show')
-        document.getElementById('menu').classList.add('menu')
-        document.getElementById('button_hamburger').classList.remove('btn_hamburger_md_active')
-        document.getElementById('button_hamburger').classList.add('btn_hamburger_md')
+        let button_hamburger = document.getElementById('button_hamburger')
+        button_hamburger.classList.remove('btn_hamburger_md_active')
+        button_hamburger.classList.add('btn_hamburger_md')
+        let menu = document.getElementById('menu')
+        menu.classList.remove('menu_show')
+        menu.classList.add('menu')
       } else {
-        document.getElementById('menu').classList.remove('menu')
-        document.getElementById('menu').classList.add('menu_show')
         document.getElementById('button_hamburger').classList.remove('btn_hamburger_md')
         document.getElementById('button_hamburger').classList.add('btn_hamburger_md_active')
+        document.getElementById('menu').classList.remove('menu')
+
+        document.getElementById('menu').classList.add('menu_show')
       }
     },
   },
@@ -64,7 +69,7 @@ export default {
 </script>
 <style lang="sass" scoped>
 *
-  transition: all 0.4s
+  transition: ease 0.4s all
 li,a
   text-decoration: none
   list-style: none
@@ -74,6 +79,7 @@ li,a
   font-size: 10px
 @media only screen and (max-width: 499px)
   li
+    display: block
     cursor: pointer
     padding: 2em
   li.active
@@ -91,6 +97,7 @@ li,a
     justify-content: space-between
     align-items: center
     padding: 0 0.5em
+    position: relative
   .logo
     padding: 0
     font-size: 2em
@@ -137,13 +144,13 @@ li,a
       transform: translate(0,-1.2em) rotate(225deg)
   .menu
     width: 100%
-    height: 0px
+    transition: max-height 0.4s
+    max-height: 0px
     overflow: hidden
-    transition: ease 0.4s all
   .menu_show
     width: 100%
-    height: auto
-    transition: ease 0.4s all
+    max-height: 500px
+    transition: max-height 0.4s
 
 @media only screen and (min-width: 500px)
   .mi_navbar_md
