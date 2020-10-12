@@ -1,6 +1,10 @@
 <template>
   <div class="pageindex">
     <Navbar></Navbar>
+    <Intro></Intro>
+    <Info></Info>
+    <MasInfo></MasInfo>
+    <SeccionAplica></SeccionAplica>
   </div>
 </template>
 
@@ -8,4 +12,9 @@
 export default {}
 </script>
 
-<style></style>
+<style>
+.pageindex {
+  width: 100%;
+  height: 1000px;
+}
+</style>
