@@ -35,6 +35,7 @@ button
   font-weight: bold
   cursor: pointer
   &:before
+    z-index: -1
     content: ""
     position: absolute
     transition: all .3s

@@ -5,6 +5,8 @@
     <Info></Info>
     <MasInfo></MasInfo>
     <SeccionAplica></SeccionAplica>
+    <Info2></Info2>
+    <Cards></Cards>
   </div>
 </template>
 
