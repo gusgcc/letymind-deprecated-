@@ -11,10 +11,7 @@
       <p>Últimos dias para aplicar</p>
     </div>
     <div class="der">
-      <svgintromarketing
-        width="100%"
-        height="auto"
-      > </svgintromarketing>
+      <svgintromarketing width="100%" height="auto"> </svgintromarketing>
       <div class="item_card">
         <h4>USD <span>45K</span></h4>
         <span>Salario anual promedio de nuestros egresados</span>
@@ -24,12 +21,12 @@
 </template>
 
 <script>
-import svgintromarketing from "~/assets/svg/index/intro-marketing.svg?inline"
+import svgintromarketing from "~/assets/svg/index/intro-marketing.svg?inline";
 export default {
   components: {
-    svgintromarketing
-  }
-}
+    svgintromarketing,
+  },
+};
 </script>
 
 <style lang="sass" scoped>

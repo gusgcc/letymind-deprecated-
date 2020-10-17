@@ -1,24 +1,14 @@
 <template>
   <ul class="mi_navbar_md">
     <li class="logo"><a href="">Letymind</a></li>
-    <button
-      class="btn_hamburger_md"
-      @click="toggleButton"
-      id="button_hamburger"
-    >
+    <button id="buttonHamburger" class="btn_hamburger_md" @click="toggleButton">
       <span class="arriba"></span>
       <span class="medio"></span>
       <span class="abajo"></span>
     </button>
-    <div
-      id="menu"
-      class="menu"
-    >
+    <div id="menu" class="menu">
       <div class="menu_inner">
-        <li
-          class="active"
-          id="home"
-        ><a>Home</a></li>
+        <li id="home" class="active"><a>Home</a></li>
         <li><a href="">Conoce el programa</a></li>
         <li><a href="">Historias de exito</a></li>
         <li><a href="">Preguntas frecuentes</a></li>
@@ -28,47 +18,55 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
       menuShow: true,
       hamburger: true,
-    }
+    };
   },
-  mounted () {
-    window.addEventListener('resize', this.hamburgerSize)
+  mounted() {
+    window.addEventListener("resize", this.hamburgerSize);
   },
-  beforeDestroy () {
-    window.removeEventListener('resize', this.hamburgerSize)
+  beforeDestroy() {
+    window.removeEventListener("resize", this.hamburgerSize);
   },
   methods: {
-    hamburgerSize (e) {
-      console.log("cambio hamburger", window.innerWidth)
+    hamburgerSize(e) {
+      console.log("cambio hamburger", window.innerWidth);
       if (window.innerWidth >= 768) {
       } else {
-        document.getElementById('menu').classList.remove('menu_show')
-        document.getElementById('menu').classList.add('menu')
-        document.getElementById('button_hamburger').classList.remove('btn_hamburger_md_active')
-        document.getElementById('button_hamburger').classList.add('btn_hamburger_md')
+        document.getElementById("menu").classList.remove("menu_show");
+        document.getElementById("menu").classList.add("menu");
+        document
+          .getElementById("buttonHamburger")
+          .classList.remove("btn_hamburger_md_active");
+        document
+          .getElementById("buttonHamburger")
+          .classList.add("btn_hamburger_md");
       }
     },
-    toggleButton (e) {
-      if (document.getElementById('menu').classList.contains('menu_show')) {
-        let button_hamburger = document.getElementById('button_hamburger')
-        button_hamburger.classList.remove('btn_hamburger_md_active')
-        button_hamburger.classList.add('btn_hamburger_md')
-        let menu = document.getElementById('menu')
-        menu.classList.remove('menu_show')
-        menu.classList.add('menu')
+    toggleButton(e) {
+      if (document.getElementById("menu").classList.contains("menu_show")) {
+        const buttonHamburger = document.getElementById("buttonHamburger");
+        buttonHamburger.classList.remove("btn_hamburger_md_active");
+        buttonHamburger.classList.add("btn_hamburger_md");
+        const menu = document.getElementById("menu");
+        menu.classList.remove("menu_show");
+        menu.classList.add("menu");
       } else {
-        document.getElementById('button_hamburger').classList.remove('btn_hamburger_md')
-        document.getElementById('button_hamburger').classList.add('btn_hamburger_md_active')
-        document.getElementById('menu').classList.remove('menu')
+        document
+          .getElementById("buttonHamburger")
+          .classList.remove("btn_hamburger_md");
+        document
+          .getElementById("buttonHamburger")
+          .classList.add("btn_hamburger_md_active");
+        document.getElementById("menu").classList.remove("menu");
 
-        document.getElementById('menu').classList.add('menu_show')
+        document.getElementById("menu").classList.add("menu_show");
       }
     },
   },
-}
+};
 </script>
 <style lang="sass" scoped>
 *
@@ -79,6 +77,7 @@ li,a
   cursor: pointer
   color: $primary
 .mi_navbar_md
+  transition: ease 0.4s all
   font-size: 10px
 li
   display: block
@@ -99,7 +98,6 @@ a
   justify-content: space-between
   align-items: center
   padding: 0 0.5em
-  position: relative
 .logo
   padding: 0
   font-size: 2em

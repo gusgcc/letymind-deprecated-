@@ -1,6 +1,8 @@
 <template>
   <div class="info">
-    <div class="izq">Tu mejor aliado para crecer <span> profesionalmente</span></div>
+    <div class="izq">
+      Tu mejor aliado para crecer <span> profesionalmente</span>
+    </div>
     <div class="der">
       Talently ha sido diseñado para ayudarte a conseguir el mejor trabajo
       posible, en cualquier parte del mundo. Estamos en esto juntos, desde tus
@@ -11,7 +13,7 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped lang="sass">

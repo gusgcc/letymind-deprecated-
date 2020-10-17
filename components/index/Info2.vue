@@ -1,16 +1,18 @@
 <template>
   <div class="info">
-    <div class="izq">Un programa para que seas contratado
-      <p> en tiempo récord</p>
+    <div class="izq">
+      Un programa para que seas contratado
+      <p>en tiempo récord</p>
     </div>
     <div class="der">
-      Te ayudamos a prepararte en tres habilidades clave para potenciar tu carrera en tecnología en cualquier parte del mundo.
+      Te ayudamos a prepararte en tres habilidades clave para potenciar tu
+      carrera en tecnología en cualquier parte del mundo.
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped lang="sass">

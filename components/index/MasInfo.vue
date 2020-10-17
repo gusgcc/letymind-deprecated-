@@ -45,7 +45,10 @@
         </div>
         <div class="item_detail">
           <h5>Únete a sesiones de preparación intensiva</h5>
-          <p>En temas de carrera, fundamentos de computer science e inglés, que potenciarán tu nivel de empleabilidad.</p>
+          <p>
+            En temas de carrera, fundamentos de computer science e inglés, que
+            potenciarán tu nivel de empleabilidad.
+          </p>
         </div>
       </div>
       <div class="item">
@@ -79,19 +82,22 @@
               width="34.1209"
               height="24.2438"
               fill="#AB73E1"
-              style="mix-blend-mode:multiply"
+              style="mix-blend-mode: multiply"
             ></rect>
             <path
               d="M4.79584 49.3855C15.1219 47.7393 39.8147 36.8146 36.6719 10.326"
               stroke="#AB73E1"
               stroke-width="5.38751"
-              style="mix-blend-mode:multiply"
+              style="mix-blend-mode: multiply"
             ></path>
           </svg>
         </div>
         <div class="item_detail">
           <h5>Recibe mentoria 1-1 con expertos</h5>
-          <p>Te ayudarán a navegar exitosamente tus proceso de selecion y conseguir mejores ofertas, más rapido.</p>
+          <p>
+            Te ayudarán a navegar exitosamente tus proceso de selecion y
+            conseguir mejores ofertas, más rapido.
+          </p>
         </div>
       </div>
       <div class="item">
@@ -104,23 +110,10 @@
             xmlns="http://www.w3.org/2000/svg"
             data-v-be7fd6c8=""
           >
-            <rect
-              width="4"
-              height="41"
-              fill="#F6C55B"
-            ></rect>
-            <rect
-              x="4"
-              y="6"
-              width="17"
-              height="18"
-              fill="#F6C55B"
-            ></rect>
-            <path
-              d="M13 24H21L13 30V24Z"
-              fill="#F6C55B"
-            ></path>
-            <g style="mix-blend-mode:multiply">
+            <rect width="4" height="41" fill="#F6C55B"></rect>
+            <rect x="4" y="6" width="17" height="18" fill="#F6C55B"></rect>
+            <path d="M13 24H21L13 30V24Z" fill="#F6C55B"></path>
+            <g style="mix-blend-mode: multiply">
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -137,21 +130,18 @@
       </div>
     </div>
     <div class="der">
-      <ImagenDer
-        width="100%"
-        height="auto"
-      ></ImagenDer>
+      <ImagenDer width="100%" height="auto"></ImagenDer>
     </div>
   </div>
 </template>
 
 <script>
-import ImagenDer from "~/assets/svg/index/masinfo.svg?inline"
+import ImagenDer from "~/assets/svg/index/masinfo.svg?inline";
 export default {
   components: {
-    ImagenDer
-  }
-}
+    ImagenDer,
+  },
+};
 </script>
 
 <style lang="sass" scoped>
@@ -176,7 +166,6 @@ export default {
     h5
       font-size: 2em
       margin-bottom: 1em
-
     p
       font-size: 1.6em
 @media only screen and (min-width: 768px)

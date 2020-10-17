@@ -7,16 +7,16 @@
     <SeccionAplica></SeccionAplica>
     <Info2></Info2>
     <Cards></Cards>
+    <SeccionPreparacion></SeccionPreparacion>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
 .pageindex {
   width: 100%;
-  height: 1000px;
 }
 </style>

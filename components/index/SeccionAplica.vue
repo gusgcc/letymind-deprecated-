@@ -2,19 +2,22 @@
   <div class="section_aplica">
     <h2>Nosotros solo ganamos</h2>
     <h1>si tú ganas primero</h1>
-    <p>Nuestra principal fuente de ingresos se dá una vez que tú seas contratado, entonces nuestros esfuerzos están completamente alineados a que consigas el mejor salario posible.</p>
+    <p>
+      Nuestra principal fuente de ingresos se dá una vez que tú seas contratado,
+      entonces nuestros esfuerzos están completamente alineados a que consigas
+      el mejor salario posible.
+    </p>
     <ButtonAplicaAhora class="btn-aply"></ButtonAplicaAhora>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style lang="sass" scoped>
 .section_aplica
+  margin-top: 4em
   display: flex
   flex-direction: column
   align-items: center
@@ -38,8 +41,7 @@ export default {
     width: 30%
   .section_aplica
     p
-      display: block 
+      display: block
       padding: 0 15% 2em 15%
       font-size: 1.6em
-
 </style>

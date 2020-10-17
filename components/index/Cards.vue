@@ -1,14 +1,13 @@
 <template>
   <div class="container_cards">
-    <div class="item">
-      <span class="item_icon">
+    <Card>
+      <template v-slot:icon>
         <svg
           width="58"
           height="56"
           viewBox="0 0 58 56"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          data-v-4c4b160e=""
         >
           <path
             d="M28.5907 11.224L35.3251 0L44.3042 9.42814L28.5907 11.224Z"
@@ -32,32 +31,31 @@
             width="34.1209"
             height="24.2438"
             fill="#5BBFCC"
-            style="mix-blend-mode: multiply;"
+            style="mix-blend-mode: multiply"
           ></rect>
           <path
             d="M4.79584 49.3855C15.1219 47.7393 39.8147 36.8146 36.6719 10.326"
             stroke="#5BBFCC"
             stroke-width="5.38751"
-            style="mix-blend-mode: multiply;"
+            style="mix-blend-mode: multiply"
           ></path>
         </svg>
-      </span>
-      <h4 class="item_title">
-        Track Técnico
-      </h4>
-      <p class="item_detail">
-        Vuélvete un experto en algoritmos y estructuras de datos para superar tus entrevistas técnicas, mejorar tu performance en tests de código y entregar “take-home-challenges" de calidad.
-      </p>
-    </div>
-    <div class="item">
-      <span class="item_icon">
+      </template>
+      <template v-slot:title> Track Técnico </template>
+      <template v-slot:detail>
+        Vuélvete un experto en algoritmos y estructuras de datos para superar
+        tus entrevistas técnicas, mejorar tu performance en tests de código y
+        entregar “take-home-challenges" de calidad.
+      </template>
+    </Card>
+    <Card>
+      <template v-slot:icon>
         <svg
           width="51"
           height="50"
           viewBox="0 0 51 50"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          data-v-4c4b160e=""
         >
           <path
             d="M0 40.4077V0H41.1923V30.9923H9.41538L0 40.4077Z"
@@ -67,9 +65,9 @@
           <path
             d="M51 49.8231V23.9308H25.1077V43.7899H45.0818L51 49.8231Z"
             fill="#F6C55B"
-            style="mix-blend-mode: multiply;"
+            style="mix-blend-mode: multiply"
           ></path>
-          <g style="mix-blend-mode: multiply;">
+          <g style="mix-blend-mode: multiply">
             <path
               d="M11.7692 14.1231L17.2615 19.6154L28.2461 8.63077"
               stroke="#F6C55B"
@@ -77,23 +75,22 @@
             ></path>
           </g>
         </svg>
-      </span>
-      <h4 class="item_title">
-        Track de Carrera
-      </h4>
-      <p class="item_detail">
-        Contarás con un mentor personal que te acompañara a navegar tus procesos de seleccion y una curricula rigurosa que te permititra desarrollar tu marca personal y destacar en el mercado profesional.
-      </p>
-    </div>
-    <div class="item">
-      <span class="item_icon">
+      </template>
+      <template v-slot:title> Track de Carrera </template>
+      <template v-slot:detail>
+        Contarás con un mentor personal que te acompañara a navegar tus procesos
+        de seleccion y una curricula rigurosa que te permititra desarrollar tu
+        marca personal y destacar en el mercado profesional.
+      </template>
+    </Card>
+    <Card>
+      <template v-slot:icon>
         <svg
           width="55"
           height="55"
           viewBox="0 0 55 55"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          data-v-4c4b160e=""
         >
           <rect
             x="26.1904"
@@ -101,9 +98,9 @@
             width="28.8095"
             height="24.4444"
             fill="#82C68F"
-            style="opacity: 0.8;"
+            style="opacity: 0.8"
           ></rect>
-          <g style="mix-blend-mode: multiply; opacity: 0.6;">
+          <g style="mix-blend-mode: multiply; opacity: 0.6">
             <rect
               x="11.3496"
               y="30.1191"
@@ -117,71 +114,31 @@
             fill="#82C68F"
           ></path>
         </svg>
-      </span>
-      <h4 class="item_title">
-        Track de Inglés
-      </h4>
-      <p class="item_detail">
-        Sumérget en el idioma de la tecnología en sesiones diarias de conversacion enfocadas en el mundo profesional con otros ingenieros alrededor de Latinoamérica.
-      </p>
-    </div>
-
+      </template>
+      <template v-slot:title> Track de Inglés </template>
+      <template v-slot:detail>
+        Sumérget en el idioma de la tecnología en sesiones diarias de
+        conversacion enfocadas en el mundo profesional con otros ingenieros
+        alrededor de Latinoamérica.
+      </template>
+    </Card>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style lang="sass" scoped>
 *
-    transition: ease 0.5s all
+  transition: ease 0.5s all
 .container_cards
-    display: flex
-    width: 100%
-    justify-content: space-between
-    overflow-y: auto
-    padding-left: 10px
-    height: 500px
-.item
-    min-width: 289px !important
-    max-width: 290px !important
-    height: 428px
-    padding: 46px 23px
-    background-color: #fff
-    border: 1px solid #ececf2
-    margin-right: 35px
-    font-size: 10px
-    position: relative
-    color: $primary
-    &_title
-        font-size: 2.2em
-        margin-top: 3.3*10px
-        margin-bottom: 2.2*10px
-    &_detail
-        font-size: 1.6em
-    &:before
-        z-index: -1
-        overflow: hidden
-        content: ''
-        position: absolute
-        border: 1px solid #ececf2
-        right: -19px
-        bottom: -19px
-        width: 100%
-        height: 100%   
-        transition: ease 0.5s all
-        border-top: 0
-        border-left: 0
-    &:hover
-        border: 1px solid $primary
-        &:before
-            border: 16px solid $primary
-            border-top: 0
-            border-left: 0
-            right: -16px
-            bottom: -16px
-        
+  margin-top: 4em
+  display: flex
+  width: 100%
+  justify-content: space-around
+  align-items: center
+  overflow-y: auto
+  padding-left: 10px
+  height: 500px
 </style>

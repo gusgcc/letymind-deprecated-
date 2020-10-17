@@ -1,5 +1,7 @@
 <template>
-  <button class="btn_apply">APLICA AHORA <svg
+  <button class="btn_apply">
+    APLICA AHORA
+    <svg
       width="8"
       height="14"
       viewBox="0 0 8 14"
@@ -14,11 +16,12 @@
         stroke-linejoin="round"
         class="icon-arrow"
       ></path>
-    </svg></button>
+    </svg>
+  </button>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style lang="sass" scoped>
