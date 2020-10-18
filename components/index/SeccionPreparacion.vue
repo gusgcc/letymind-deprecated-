@@ -15,9 +15,7 @@
       </p>
     </div>
     <div class="der">
-      <SeccionPreparacionItem></SeccionPreparacionItem>
-      <SeccionPreparacionItem></SeccionPreparacionItem>
-      <SeccionPreparacionItem></SeccionPreparacionItem>
+      <Tabs></Tabs>
     </div>
   </div>
 </template>
@@ -28,26 +26,26 @@ export default {};
 
 <style lang="sass" scoped>
 .seccion_preparacion
-    color: $primary
-    padding: 1em 5%
+  color: $primary
+  padding: 1em 5%
 .izq
-    h2
-        font-size: 48px
-        p
-            font-size: 31.2px
-            margin-bottom: 0
-            line-height: 0
+  h2
+    font-size: 48px
     p
-        font-size: 16px
-        margin-bottom: 1em
+      font-size: 31.2px
+      margin-bottom: 0
+      line-height: 0
+  p
+    font-size: 16px
+    margin-bottom: 1em
 @media only screen and (min-width: 768px)
-    .seccion_preparacion
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        .izq
-            width: 40%
-        .der
-            width: 60%
+  .seccion_preparacion
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    .izq
+      width: 40%
+    .der
+      width: 55%
 </style>

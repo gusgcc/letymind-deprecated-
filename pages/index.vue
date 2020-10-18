@@ -8,6 +8,7 @@
     <Info2></Info2>
     <Cards></Cards>
     <SeccionPreparacion></SeccionPreparacion>
+    <Footer></Footer>
   </div>
 </template>
 
