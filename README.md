@@ -2,6 +2,8 @@
 
 ## Build Setup
 
+Demo: http://letymindv2.herokuapp.com/
+
 ```bash
 # install dependencies
 $ npm install
